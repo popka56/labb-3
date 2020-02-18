@@ -1,0 +1,87 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+header{
+    background-color: #1a1a1a;
+    color: white;
+    width: 100%;
+    text-align: center;
+    overflow-y: hidden;
+}
+
+header h1{
+    font-size: 40px;
+    margin: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    font-size: 25px;
+}
+
+a:hover{
+    color: yellow;
+}
+
+main{
+    background-color: black;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("./background-code.jpg");
+    background-size: contain;
+    overflow: hidden;
+    height: 100vh;
+    
+    color: white;
+    text-align: center;
+    font-size: 10vw;
+}
+
+.mainApi{
+    font-size: 3vw;
+}
+
+.mainApi div p{
+    /*color: yellow;*/
+}
+
+.apih2{
+    margin: 30px;
+}
+
+#flexyDiv{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+footer{
+    background-color: #1a1a1a;
+    color: white;
+    width: 100%;
+    padding: 5px;
+    font-size: 12px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
+/*Mobil support*/
+@media only screen and (max-width: 765px){
+    h2{
+        margin-top: 30vh;
+    }
+    .apih2{
+        margin-top: 5vh;
+        font-size: 30px;
+    }
+    p{
+        font-size: 20px;
+    }
+}
