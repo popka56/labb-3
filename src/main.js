@@ -10,6 +10,7 @@ Vue.use(Vuex)
 import hem from './components/hem.vue'
 import api1 from './components/api1.vue'
 import api2 from './components/api2.vue'
+import api3 from './components/api3.vue'
 
 const router = new VueRouter({
   routes: [{
@@ -24,16 +25,35 @@ const router = new VueRouter({
   }, {
       component: api2,
       path: '/api2'
-  },]
+  }, {
+      component: api3,
+      path: '/api3'
+  }]
 })
 
-const store = new Vuex.Store({
+export const store = new Vuex.Store({
   state: {
-    someNumber: 5
-  }
+    deckId: null,
+    remainingCards: 0,
+    cardResult: ""
+  },
+  mutations: {
+    saveDeckId(state, payload){
+      state.deckId = payload
+    },
+    saveRemainingCards(state, payload){
+      state.remainingCards = payload
+    },
+    saveCardResult(state, payload){
+      state.cardResult = payload
+    }
+  },
+    actions: {
+      increase(context) {
+        context.commit('increase')
+      }
+    }
 })
-
-Vue.config.productionTip = false
 
 new Vue({
   render: h => h(App),

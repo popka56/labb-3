@@ -9,6 +9,7 @@
           <router-link to="/hem">Hem</router-link>
           <router-link to="/api1">API 1</router-link>
           <router-link to="/api2">API 2</router-link>
+          <router-link to="/api3">API 3</router-link>
         </nav>
       </div>
     </header>
@@ -16,17 +17,7 @@
       <router-view></router-view>
     </main>
     <footer>
-      <div>Copyright &copy; {{ copyright.name }}, All rights reserved.</div>
+      <div>Copyright &copy; Hugo Viklund, All rights reserved.</div>
     </footer>
   </div>
 </template>
-
-<script>
-export default {
-  data: function() {
-    return {
-      copyright: {name: "Hugo Viklund"}
-    }
-  }
-}
-</script>
