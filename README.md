@@ -1,4 +1,5 @@
 # labb-3
+Detta projekt är gjort i lärande syfte hos IT-Högskolan.
 
 ## Project setup
 ```
